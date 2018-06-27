@@ -4,7 +4,7 @@ node_js:
 before_deploy:
 - git checkout master
 - npm version patch
-- git push https://github.com/termosa/travis-deploys-npm --tags
+- git push https://ed1ec210cfc602dcff43cb102efd9b675a01ac0c@github.com/termosa/travis-deploys-npm --tags
 deploy:
   provider: releases
   api_key:
