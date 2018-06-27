@@ -1,4 +1,5 @@
 {
   "name": "travis-deploys-npm",
-  "version": "0.0.2"
+  "version": "0.0.2",
+  "description": "useless"
 }
