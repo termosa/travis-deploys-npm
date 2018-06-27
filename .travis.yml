@@ -1,7 +1,7 @@
 language: node_js
 node_js:
 - 6.4
-before_install:
+after_success:
 - git checkout master
 - npm version patch
 deploy:
