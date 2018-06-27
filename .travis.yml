@@ -3,7 +3,7 @@ node_js:
 - 6.4
 before_deploy:
 - npm version patch
-- git branch
+- git branch | cat
 deploy:
   provider: releases
   api_key:
