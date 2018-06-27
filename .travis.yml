@@ -1,3 +1,12 @@
 language: node_js
 node_js:
-  - 6.4
+- 6.4
+before_deploy:
+- npm version patch
+deploy:
+  provider: releases
+  api_key:
+    secure: IUhSszwubwNynqXViTSurFHgA+JPOtG02zQlTUC884cNNaP9NOmSRe4nUf25QZWaAnneRLEzfDJU7OoDfDVWinf05+AGeizw69CdVRFC+aBNaqHgGlLISNpwbw1xeT1arDW1+FBBXO+V6WhCHS+FW6RsL3yQCoPSWTVdbH6hUIuVJV2Zl7fepyPn0CiX6Pswr/gZpjN/tlcB+E8KYXIvwz84UjW+l2tGkdx789ua5/uhww9bRBuJBdcBB9tuL1qnDiYqpmnDq1RDePAreD3/KHoiR9USsjq5XAwq4b9i0iq2IVWvm7DSHCzZEsFpH36z4dmRu4kGLchblk4xySn0FdHjuGmzuv/yrMdubCxfwaFlD0VLC69lJSQmdRVykh7OQM3Q0+TwoK7fXGwbgl6CKw6BiH2To2aVh/1bcEQNoZ/GXr4HP0/O+JQnTkTMWC9oyNxruc5la+zuY79B0OHwZf3SEkVAGpXsS8YH+vac7YgeJiecDaKn5SPSl4qM2No6KDQBrYG23RV47n21FHO41uDp/GWtFMfxCgrdsARHehFTKuLyKnfAH1DJ1uDNEuwMPeK+loSbRjofE7hhnAMlgHDjAJ2wvwNt3tXOW/KIzc0PKvZYb3U9jBXsDy7OjgK+NMPnwvp9So2Rn/QDK+mS1jhumGOLJOHM2GcwUdAh61A=
+  file: package.json
+  on:
+    repo: termosa/travis-deploys-npm
